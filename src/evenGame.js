@@ -32,6 +32,6 @@ export default () => {
   if (isSuccess) {
     console.log(`Congratulations, ${name}!`);
   } else {
-    console.log(`Let's try again, ${name}!}`);
+    console.log(`Let's try again, ${name}!`);
   }
 };
