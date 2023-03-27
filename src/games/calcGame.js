@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import {
   MIN_RANGE, MAX_RANGE, TRIES, getRandomInt, getRandomSign, playGame,
 } from '../index.js';
