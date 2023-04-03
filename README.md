@@ -5,3 +5,4 @@
 [![asciicast](https://asciinema.org/a/NHVdwmOSKWXihyxznyspNYzbo.svg)](https://asciinema.org/a/NHVdwmOSKWXihyxznyspNYzbo)
 [![asciicast](https://asciinema.org/a/oLnMGCSQMSuEhZRWRgg5o1O94.svg)](https://asciinema.org/a/oLnMGCSQMSuEhZRWRgg5o1O94)
 [![asciicast](https://asciinema.org/a/0E02OShnB2O3Ivd3HGLrOuUyD.svg)](https://asciinema.org/a/0E02OShnB2O3Ivd3HGLrOuUyD)
+[![asciicast](https://asciinema.org/a/o48iUyAPsXYRoAtIdLf2pHwIs.svg)](https://asciinema.org/a/o48iUyAPsXYRoAtIdLf2pHwIs)
