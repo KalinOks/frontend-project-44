@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/KalinOks/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/KalinOks/frontend-project-44/actions)",
+  "description": "The project about 5 games manipulating with numbers like prime numbers, progression, parity ect [![Actions Status](https://github.com/KalinOks/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/KalinOks/frontend-project-44/actions)",
   "main": "index.js",
   "type": "module",
   "scripts": {

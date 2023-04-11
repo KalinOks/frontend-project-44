@@ -1,28 +1,29 @@
 import {
-  MIN_RANGE, MAX_RANGE, TRIES, getRandomInt, getRandomSign, playGame,
+  MIN_RANGE, MAX_RANGE, TRIES, getRandomInt, playGame,
 } from '../index.js';
 
-const calculate = (oneNumber, twoNumber, signs) => {
-  let result;
+const getRandomSign = () => { // ??
+  const SIGN = ['+', '-', '*'];
 
+  const index = getRandomInt(0, SIGN.length - 1);
+
+  return SIGN[index];
+};
+
+const calculate = (oneNumber, twoNumber, signs) => {
   switch (signs) {
     case '+':
-      result = oneNumber + twoNumber;
-      break;
+      return oneNumber + twoNumber;
 
     case '-':
-      result = oneNumber - twoNumber;
-      break;
+      return oneNumber - twoNumber;
 
     case '*':
-      result = oneNumber * twoNumber;
-      break;
+      return oneNumber * twoNumber;
 
     default:
-      break;
+      return null;
   }
-
-  return result;
 };
 
 export default () => {

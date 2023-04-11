@@ -5,10 +5,11 @@ import {
 const isPrime = (number) => {
   for (let i = 2; i < number; i += 1) {
     if (number % i === 0) {
-      return 'no';
+      return false;
     }
   }
-  return 'yes';
+
+  return true;
 };
 
 export default () => {
@@ -20,7 +21,7 @@ export default () => {
 
     const task = (`${number}`);
 
-    const correctAnswer = isPrime(number);
+    const correctAnswer = isPrime(number) ? 'yes' : 'no';
 
     gameLevels.push([task, correctAnswer]);
   }
