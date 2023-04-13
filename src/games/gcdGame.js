@@ -1,5 +1,5 @@
 import {
-  MIN_RANGE, MAX_RANGE, TRIES, getRandomInt, playGame,
+  MIN_RANGE, MAX_RANGE, getRandomInt, playGame,
 } from '../index.js';
 
 const findMinDivider = (first, second) => {
@@ -14,19 +14,19 @@ const findMinDivider = (first, second) => {
   return minDivider;
 };
 
+const generateTask = () => {
+  const firstNumber = getRandomInt(MAX_RANGE, MIN_RANGE);
+  const secondNumber = getRandomInt(MAX_RANGE, MIN_RANGE);
+
+  const task = (`${firstNumber} ${secondNumber}`);
+
+  const correctAnswer = findMinDivider(firstNumber, secondNumber).toString();
+
+  return [task, correctAnswer];
+};
+
 export default () => {
-  const gameLevels = [];
   const questionText = 'Find the greatest common divisor of given numbers.';
 
-  for (let i = 0; i < TRIES; i += 1) {
-    const firstNumber = getRandomInt(MAX_RANGE, MIN_RANGE);
-    const secondNumber = getRandomInt(MAX_RANGE, MIN_RANGE);
-
-    const task = (`${firstNumber} ${secondNumber}`);
-
-    const correctAnswer = findMinDivider(firstNumber, secondNumber).toString();
-
-    gameLevels.push([task, correctAnswer]);
-  }
-  playGame(questionText, gameLevels);
+  playGame(questionText, generateTask);
 };

@@ -7,14 +7,14 @@ export const TRIES = 3;
 
 export const getRandomInt = (max, min) => Math.floor(Math.random() * (max - min)) + min;
 
-export const playGame = (gameQuestion, levels) => {
+export const playGame = (gameQuestion, getGameTask) => {
   const name = start();
   let isSuccess = true;
 
   console.log(gameQuestion);
 
-  for (let i = 0; i < levels.length; i += 1) {
-    const [task, correctAnswer] = levels[i];
+  for (let i = 0; i < TRIES; i += 1) {
+    const [task, correctAnswer] = getGameTask();
 
     console.log(`Question: ${task}`);
     const answer = readlineSync.question('Your answer: ').toLowerCase();
