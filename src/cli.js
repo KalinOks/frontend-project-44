@@ -8,6 +8,4 @@ export default () => {
   const name = askName();
 
   console.log(`Hello, ${name}!`);
-
-  return name;
 };
