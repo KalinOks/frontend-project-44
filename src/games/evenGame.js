@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 
 import {
-  MIN_RANGE, MAX_RANGE, getRandomInt, playGame,
+  MIN_RANGE, MAX_RANGE, playGame,
 } from '../index.js';
 
-const isEven = (number) => (number % 2 === 0);
+import getRandomInt from '../utils.js';
+
+const isEven = (number) => number % 2 === 0;
 
 const generateTask = () => {
   const number = getRandomInt(MAX_RANGE, MIN_RANGE);

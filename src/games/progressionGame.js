@@ -1,6 +1,8 @@
 import {
-  MIN_RANGE, MAX_RANGE, getRandomInt, playGame,
+  MIN_RANGE, MAX_RANGE, playGame,
 } from '../index.js';
+
+import getRandomInt from '../utils.js';
 
 const makeProgression = (firstNumber, quantityOfNumbers, step) => {
   const progressNumbers = [];

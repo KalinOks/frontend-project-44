@@ -4,16 +4,12 @@ export const MIN_RANGE = 1;
 export const MAX_RANGE = 30;
 export const TRIES = 3;
 
-export const getRandomInt = (max, min) => Math.floor(Math.random() * (max - min)) + min;
-
 export const playGame = (gameQuestion, getGameTask) => {
   console.log('Welcome to the Brain Games!');
 
   const name = readlineSync.question('May I have your name? ');
 
   console.log(`Hello, ${name}!`);
-
-  let isSuccess = true;
 
   console.log(gameQuestion);
 
@@ -26,15 +22,11 @@ export const playGame = (gameQuestion, getGameTask) => {
     if (answer === correctAnswer) {
       console.log('Correct!');
     } else {
-      isSuccess = false;
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-      break;
+      console.log(`Let's try again, ${name}!`);
+      return;
     }
   }
 
-  if (isSuccess) {
-    console.log(`Congratulations, ${name}!`);
-  } else {
-    console.log(`Let's try again, ${name}!`);
-  }
+  console.log(`Congratulations, ${name}!`);
 };

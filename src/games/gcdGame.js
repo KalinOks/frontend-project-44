@@ -1,6 +1,8 @@
 import {
-  MIN_RANGE, MAX_RANGE, getRandomInt, playGame,
+  MIN_RANGE, MAX_RANGE, playGame,
 } from '../index.js';
+
+import getRandomInt from '../utils.js';
 
 const findMinDivider = (first, second) => {
   const minNumber = Math.min(first, second);
@@ -18,7 +20,7 @@ const generateTask = () => {
   const firstNumber = getRandomInt(MAX_RANGE, MIN_RANGE);
   const secondNumber = getRandomInt(MAX_RANGE, MIN_RANGE);
 
-  const task = (`${firstNumber} ${secondNumber}`);
+  const task = `${firstNumber} ${secondNumber}`;
 
   const correctAnswer = findMinDivider(firstNumber, secondNumber).toString();
 
